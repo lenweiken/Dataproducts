@@ -1,0 +1,12 @@
+name: myApp
+title: myApp
+username:
+account: lenweiken
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2722492
+bundleId: 3572303
+url: https://lenweiken.shinyapps.io/myApp/
+when: 1598787183.30932
+asMultiple: FALSE
+asStatic: FALSE
