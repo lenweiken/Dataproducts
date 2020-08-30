@@ -1,11 +1,11 @@
 shinyUI(pageWithSidebar
-        ( headerPanel("Loan calculator"), 
+        ( headerPanel("Monthly Loan Payment Calculator -> Set your APR (Annual percentage rate), loan duration and loan amount! "), 
             sidebarPanel(
-                sliderInput("Apr", "APR (%):",
+                sliderInput("Apr", "APR % (Annual percentage rate):",
                             min = 0, max = 100,
                             value = 0.10, step = 0.1), 
                 
-                sliderInput("Month", "Number of months:",
+                sliderInput("Month", "Loan duration (in number of months):",
                             min = 0, max = 210,
                             value = 12, step = 1),
                 
@@ -17,16 +17,7 @@ shinyUI(pageWithSidebar
             
             
     mainPanel(
-        p('Monthly Interest %'), 
-        textOutput('text1'),
-       
-         p('Number of months'),
-        textOutput('text2'),
-        
-        p('Loan Amount'),
-        textOutput('text3'),
-        
-        p('Monthly Payment'),
+        p('Monthly Payment Required'),
         textOutput('text4'),
     ) ))
 
